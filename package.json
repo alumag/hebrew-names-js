@@ -1,0 +1,29 @@
+{
+  "name": "hebrew-names",
+  "version": "1.0.0",
+  "description": "Random Hebrew name generator",
+  "files": [
+    "README.md",
+    "AUTHORS.md",
+    "index.js",
+    "data/*"
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "index.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alumag/hebrew-names-js.git"
+  },
+  "keywords": [
+    "hebrew"
+  ],
+  "author": "Aluma Gelbard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alumag/hebrew-names-js/issues"
+  },
+  "homepage": "https://github.com/alumag/hebrew-names-js#readme"
+}
