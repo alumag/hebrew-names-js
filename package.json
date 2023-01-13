@@ -1,11 +1,12 @@
 {
   "name": "hebrew-names",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Random Hebrew name generator",
   "files": [
     "README.md",
     "AUTHORS.md",
     "index.js",
+    "index.d.ts",
     "data/*"
   ],
   "main": "index.js",
