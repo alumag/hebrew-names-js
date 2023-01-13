@@ -4,7 +4,9 @@ const path = require('path');
 const ETHNICITIES = ['jew', 'muslim', 'christian', 'druze', 'other'];
 const GENDERS = ['male', 'female'];
 
-const getFilePath = filename => path.join(__dirname, 'data', filename);
+const environment = process.env.JEST_WORKER_ID ? 'testing' : 'production';
+
+const getFilePath = filename => path.join(__dirname, environment === 'testing' ? 'test' : 'data', filename);
 
 const FILES = {
   'first:jew:male': getFilePath('jew.male.first'),
@@ -72,7 +74,7 @@ function getName(filename) {
       return name
     }
   }
-  return "";
+  return '';
 }
 
 function getFirstName(ethnicity, gender) {
